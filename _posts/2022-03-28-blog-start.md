@@ -4,7 +4,6 @@ author: self
 date: 2022-03-28 23:00:00 +0900
 categories: [Blogging]
 tags: [blogging, start]
-pin: true
 ---
 
 ## 시작하며
@@ -26,4 +25,4 @@ public class HelloWorld {
 ```
 
 ### 중요 문구
-> 여기에 `중요` 포인트? _작성_ 
+> 여기에 `중요` 포인트? _작성_
