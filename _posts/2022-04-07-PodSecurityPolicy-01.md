@@ -1,5 +1,5 @@
 ---
-title: PodSecurityPolicy: unable to admit pod
+title: PodSecurityPolicy unable to admit pod
 author: self
 date: 2022-04-07 22:50:00 +0900
 categories: [k8s, kubeflow, pipeline]
