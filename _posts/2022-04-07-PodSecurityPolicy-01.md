@@ -31,6 +31,7 @@ This step is in Error state with this message: task 'xx' errored: pods "kube-pip
 ## 해결 방법
 - kubeflow는 rbac을 사용.
 - 아래와 같이 ClusterRole의 rules에 정책 추가
+
 ```yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -52,5 +53,6 @@ rules:
 대상 ClusterRole 모두 수정 후 pipeline을 run해보자.
 
 ### 마치며
-> 실제 테스트는 생략한다. kubeflow에서 사용하는 ClusterRole이 많아 PSP를 사용하는 Cluster의 경우엔 여러가지 확인이 필요하다.
 
+> 실제 테스트는 생략한다. kubeflow에서 사용하는 ClusterRole이 많아 PSP를 사용하는 Cluster의 경우엔 여러가지 확인이 필요하다.
+{: .prompt-tip }
