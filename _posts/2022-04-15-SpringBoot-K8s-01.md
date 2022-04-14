@@ -60,8 +60,8 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
  - build 및 push
- - build는 자신의 docker hub repository 밑으로 지정한다.
- - Dockerfile이 존재하는 directory에서 아래 커맨드 수행
+   - build는 자신의 docker hub repository 밑으로 지정한다.
+   - Dockerfile이 존재하는 directory에서 아래 커맨드 수행
 
 ```console
 docker build -t {repositoryName}/{appName}:{tag} .
@@ -142,7 +142,8 @@ kubectl apply -f nodeport.yaml
 ```
 
 #### 확인
-docker hub에 제대로 image가 push 되었다면 문제없이 minikube kubernetes 환경에 배포가 되었을 것이다.
+> docker hub에 제대로 image가 push 되었다면 문제없이 minikube kubernetes 환경에 배포가 되었을 것이다.
+{: .prompt-warning }
 
 pod가 Running 상태로 변경되었다면 port-forwarding을 통해 minikube kubernetes 서비스에 접속해보자.
 
