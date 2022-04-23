@@ -1,0 +1,3 @@
+ User-agent: *
+ Allow: /
+ Sitemap: https://bonclay.github.io/sitemap.xml
