@@ -1,7 +1,7 @@
 ---
 title: Java Bean Lifecycle
 author: self
-date: 2022-05-08 21:00:00 +0900
+date: 2022-05-08 21:30:00 +0900
 categories: [Java, Bean]
 tags: [java, bean, lifecycle]
 ---
@@ -76,9 +76,6 @@ public class SingerWithJSR250 {
 * 일반적인 Context 구성
 ```xml
 <context:annotation-config/>
-<bean id="singerOne"
-    class="com.apress.prospring5.ch4.SingerWithInterface"
-    p:name="John Mayer" p:age="39"/>
 ```
 
 ### @Bean 초기화 메서드 선언
