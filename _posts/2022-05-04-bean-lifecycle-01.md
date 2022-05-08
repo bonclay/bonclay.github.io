@@ -1,7 +1,7 @@
 ---
 title: Java Bean Lifecycle
 author: self
-date: 2022-05-08 21:30:00 +0900
+date: 2022-05-08 21:00:00 +0900
 categories: [Java, Bean]
 tags: [java, bean, lifecycle]
 ---
@@ -32,11 +32,12 @@ public class Singer {
   ...
 }
 ```
-* init-method="init" Context 구성
-```xml
-<bean id="singerOne"
+
+* Context 구성
+```
+bean id="singerOne"
     class="com.apress.prospring5.ch4.Singer"
-    init-method="init" p:name="John Mayer" p:age="39"/>
+    init-method="init" p:name="John Mayer" p:age="39"
 ```
 
 ### InitializingBean 인터페이스 구현
@@ -53,10 +54,10 @@ public class SingerWithInterface implements InitializingBean {
 ```
 
 * 일반적인 Context 구성
-```xml
-<bean id="singerOne"
+```
+bean id="singerOne"
     class="com.apress.prospring5.ch4.SingerWithInterface"
-    p:name="John Mayer" p:age="39"/>
+    p:name="John Mayer" p:age="39"
 ```
 
 ### JSR-250 @PostConstruct 사용
@@ -74,8 +75,11 @@ public class SingerWithJSR250 {
 ```
 
 * 일반적인 Context 구성
-```xml
-<context:annotation-config/>
+```
+context:annotation-config
+bean id="singerOne"
+    class="com.apress.prospring5.ch4.SingerWithInterface"
+      p:name="John Mayer" p:age="39"
 ```
 
 ### @Bean 초기화 메서드 선언
@@ -108,14 +112,13 @@ public class SingerConfigDemo {
 * 일반적으로 소멸 콜백은 초기화 콜백과 쌍으로 사용.
 
 ### 메서드
-* init-method="init" Context 구성
-```xml
-<bean id="destructiveBean"
+* destroy-method="destroy" Context 구성
+```
+bean id="destructiveBean"
     class="com.apress.prospring5.ch4.DestructiveBean"
     destroy-method="destroy"
     init-method="afterPropertiesSet"
     p:filePath=""
-/>
 ```
 
 ### DisposableBean 인터페이스 구현
