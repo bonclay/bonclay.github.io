@@ -10,7 +10,7 @@ tags: [java, bean, lifecycle]
 스프링 빈 라이프사이클 관리를 통해 특점 시점에 통지를 받을 수 있음.
 
 ## 빈 라이프사이클
-![BeanLifecycle](https://raw.githubusercontent.com/bonclay/bonclay.github.io/main/image/blog_0508_01.png)
+![BeanLifecycle](https://raw.githubusercontent.com/bonclay/bonclay.github.io/main/image/blog_0508_01.jpg)
 * 출처 : (책) 전문가를 위한 스프링 5
 
 ## 생성 통지 메커니즘
