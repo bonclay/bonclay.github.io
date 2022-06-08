@@ -1,7 +1,7 @@
 ---
 title: TypeScript Global Variables. feat! window
 author: self
-date: 2022-06-08 23:30:00 +0900
+date: 2022-06-08 23:20:00 +0900
 categories: [TypeScript, Kubeflow pipeline]
 tags: [kubeflow pipeline, react, typescript, window]
 ---
